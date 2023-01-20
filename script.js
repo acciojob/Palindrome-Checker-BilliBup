@@ -7,11 +7,16 @@ function palindrome(str){
    let end =  n-1;
    while(start<=end){
 	   if(s.charAt(start)!=s.charAt(end)){
-		   return false;
+		   break;
 	   }
 	   start++;
 	   end--;
    }
-   return true;
+  if(start>end){
+	  console.log("true")
+  }
+  else{
+	  console.log("false")
+  }
 }
 module.exports = palindrome
