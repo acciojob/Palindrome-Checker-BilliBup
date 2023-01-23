@@ -13,10 +13,10 @@ function palindrome(str){
 	   end--;
    }
   if(start>end){
-	  console.log("true")
+	  return true;
   }
   else{
-	  console.log("false")
+	   return false;
   }
 }
 module.exports = palindrome
